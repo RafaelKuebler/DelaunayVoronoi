@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Delaunay
 {
@@ -36,22 +35,4 @@ namespace Delaunay
             return hCode.GetHashCode();
         }
     }
-
-    /*public class EdgeEqualityComparer : IEqualityComparer<Edge>
-    {
-        public bool Equals(Edge x, Edge y)
-        {
-            if (x == null || y == null) return false;
-
-            var samePoints = x.Point1 == y.Point1 && x.Point2 == y.Point2;
-            var samePointsReversed = x.Point1 == y.Point2 && x.Point2 == y.Point1;
-            return samePoints || samePointsReversed;
-        }
-
-        public int GetHashCode(Edge obj)
-        {
-            int hCode = (int)obj.Point1.X ^ (int)obj.Point1.Y ^ (int)obj.Point2.X ^ (int)obj.Point2.Y;
-            return hCode.GetHashCode();
-        }
-    }*/
 }

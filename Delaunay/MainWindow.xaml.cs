@@ -30,7 +30,9 @@ namespace Delaunay
                 myEllipse.VerticalAlignment = VerticalAlignment.Top;
                 myEllipse.Width = 10;
                 myEllipse.Height = 10;
-                myEllipse.Margin = new Thickness((int)(point.X - myEllipse.Height / 2), (int)(point.Y - myEllipse.Width / 2), 0, 0);
+                var ellipseX = point.X - 0.5 * myEllipse.Height;
+                var ellipseY = point.Y - 0.5 * myEllipse.Width;
+                myEllipse.Margin = new Thickness(ellipseX, ellipseY, 0, 0);
 
                 Canvas.Children.Add(myEllipse);
             }
@@ -44,23 +46,14 @@ namespace Delaunay
             {
                 var line = new Line();
                 line.Stroke = System.Windows.Media.Brushes.LightSteelBlue;
+                line.StrokeThickness = 2;
+
                 line.X1 = edge.Point1.X;
                 line.X2 = edge.Point2.X;
                 line.Y1 = edge.Point1.Y;
                 line.Y2 = edge.Point2.Y;
 
-                line.StrokeThickness = 2;
                 Canvas.Children.Add(line);
-
-                /*var line2 = new Line();
-                line2.Stroke = System.Windows.Media.Brushes.Black;
-                line2.X1 = 0;
-                line2.X2 = edge.Point1.X;
-                line2.Y1 = 0;
-                line2.Y2 = edge.Point1.Y;
-
-                line2.StrokeThickness = 2;
-                Canvas.Children.Add(line2);*/
             }
         }
     }

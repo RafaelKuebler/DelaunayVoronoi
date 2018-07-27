@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Delaunay
 {
@@ -17,10 +14,8 @@ namespace Delaunay
 
         public Triangle(Point point1, Point point2, Point point3)
         {
-            if (!IsClockwise(point1, point2, point3))
+            if (!IsCounterClockwise(point1, point2, point3))
             {
-                // TODO: thos is wrong, internet implementation orders them in clockwis eorder as done here,
-                // even if check should be performed on counterclockwise
                 Edges[0] = new Edge(point1, point3);
                 Edges[1] = new Edge(point3, point2);
                 Edges[2] = new Edge(point2, point1);
@@ -43,7 +38,7 @@ namespace Delaunay
             return $"Triangle: ({vertices[0]}, {vertices[1]}, {vertices[2]})";
         }
 
-        private bool IsClockwise(Point point1, Point point2, Point point3)
+        private bool IsCounterClockwise(Point point1, Point point2, Point point3)
         {
             var result = (point2.X - point1.X) * (point3.Y - point1.Y) -
                 (point3.X - point1.X) * (point2.Y - point1.Y);
