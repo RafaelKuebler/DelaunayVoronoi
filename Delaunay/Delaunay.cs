@@ -98,9 +98,9 @@ namespace Delaunay
             var cy_ = triangle.Vertices[2].Y - point.Y;
 
             var det =
-                (ax_ * ax_ + ay_ * ay_) * (bx_ * cy_ - cx_ * by_) -
-                (bx_ * bx_ + by_ * by_) * (ax_ * cy_ - cx_ * ay_) +
-                (cx_ * cx_ + cy_ * cy_) * (ax_ * by_ - bx_ * ay_);
+                (ax_ * ax_ + ay_ * ay_) * (bx_ * cy_ - by_ * cx_) +
+                (bx_ * bx_ + by_ * by_) * (ay_ * cx_ - ax_ * cy_) +
+                (cx_ * cx_ + cy_ * cy_) * (ax_ * by_ - ay_ * bx_);
             return det > 0;
         }
     }
