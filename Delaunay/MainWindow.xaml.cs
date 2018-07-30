@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Shapes;
@@ -9,15 +8,18 @@ namespace Delaunay
     public partial class MainWindow : Window
     {
         private DelaunayTriangulator delaunay = new DelaunayTriangulator();
+        private Voronoi voronoi = new Voronoi();
 
         public MainWindow()
         {
             InitializeComponent();
 
-            var points = delaunay.GeneratePoints(400, 800, 400);
+            var points = delaunay.GeneratePoints(100, 800, 400);
             DrawPoints(points);
             var triangulation = delaunay.BowyerWatson(points);
             DrawTriangulation(triangulation);
+            var vornoiEdges = voronoi.GenerateEdgesFromDelaunay(triangulation);
+            DrawVoronoi(vornoiEdges);
         }
 
         private void DrawPoints(IEnumerable<Point> points)
@@ -38,7 +40,7 @@ namespace Delaunay
             }
         }
 
-        private void DrawTriangulation(HashSet<Triangle> triangulation)
+        private void DrawTriangulation(IEnumerable<Triangle> triangulation)
         {
             var edges = triangulation.SelectMany(o => o.Edges).Distinct();
 
@@ -46,6 +48,23 @@ namespace Delaunay
             {
                 var line = new Line();
                 line.Stroke = System.Windows.Media.Brushes.LightSteelBlue;
+                line.StrokeThickness = 2;
+
+                line.X1 = edge.Point1.X;
+                line.X2 = edge.Point2.X;
+                line.Y1 = edge.Point1.Y;
+                line.Y2 = edge.Point2.Y;
+
+                Canvas.Children.Add(line);
+            }
+        }
+
+        private void DrawVoronoi(IEnumerable<Edge> voronoiEdges)
+        {
+            foreach (var edge in voronoiEdges)
+            {
+                var line = new Line();
+                line.Stroke = System.Windows.Media.Brushes.DarkViolet;
                 line.StrokeThickness = 2;
 
                 line.X1 = edge.Point1.X;

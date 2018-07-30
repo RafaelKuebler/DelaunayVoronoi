@@ -12,6 +12,29 @@ namespace Delaunay
             }
         }
 
+        public Point? Circumcenter {
+            get {
+                var p0 = Vertices[0];
+                var p1 = Vertices[1];
+                var p2 = Vertices[2];
+                var dA = p0.X * p0.X + p0.Y * p0.Y;
+                var dB = p1.X * p1.X + p1.Y * p1.Y;
+                var dC = p2.X * p2.X + p2.Y * p2.Y;
+
+                var aux1 = (dA * (p2.Y - p1.Y) + dB * (p0.Y - p2.Y) + dC * (p1.Y - p0.Y));
+                var aux2 = -(dA * (p2.X - p1.X) + dB * (p0.X - p2.X) + dC * (p1.X - p0.X));
+                var div = (2 * (p0.X * (p2.Y - p1.Y) + p1.X * (p0.Y - p2.Y) + p2.X * (p1.Y - p0.Y)));
+
+                if (div == 0)
+                {
+                    return null;
+                }
+
+                var center = new Point(aux1 / div, aux2 / div);
+                return center;
+            }
+        }
+
         public Triangle(Point point1, Point point2, Point point3)
         {
             if (!IsCounterClockwise(point1, point2, point3))

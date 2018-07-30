@@ -56,6 +56,7 @@
     </ApplicationDefinition>
     <Compile Include="Edge.cs" />
     <Compile Include="Triangle.cs" />
+    <Compile Include="Voronoi.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

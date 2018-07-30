@@ -14,9 +14,12 @@ namespace Delaunay
         {
             MaxX = maxX;
             MaxY = maxY;
-            var points = new List<Point>();
+            var points = new List<Point>() {
+                new Point(0, 0) , new Point(0, MaxY), new Point(MaxX, MaxY),
+                new Point(0, 0),new Point(MaxX, MaxY), new Point(MaxX, 0)
+            };
             var random = new Random();
-            
+
             for (int i = 0; i < amount; i++)
             {
                 var pointX = random.NextDouble() * MaxX;
@@ -27,13 +30,14 @@ namespace Delaunay
             return points;
         }
 
-        public HashSet<Triangle> BowyerWatson(IEnumerable<Point> points)
+        public IEnumerable<Triangle> BowyerWatson(IEnumerable<Point> points)
         {
             // for border: when supratriangle is not big enough, edges of convex hull are sometimes
             // not part of the triangulation, using two triangles enclosing all generated points fixes this
             // (remove all supratriangle references in that case)
             //var tri1 = new Triangle(new Point(0, 0), new Point(0, MaxY), new Point(MaxX, MaxY));
             //var tri2 = new Triangle(new Point(0, 0), new Point(MaxX, MaxY), new Point(MaxX, 0));
+            //var triangulation = new HashSet<Triangle>() { tri1, tri2 };
             var supraTriangle = GenerateSupraTriangle();
             var triangulation = new HashSet<Triangle>() { supraTriangle };
 
