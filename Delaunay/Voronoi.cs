@@ -32,6 +32,7 @@ namespace Delaunay
 
         public IEnumerable<Triangle> NaiveNeigborSearch(Triangle triangle, IEnumerable<Triangle> triangulation)
         {
+            // TODO: improve point/triangle data structure to be able to search more efficiently for neighbors
             var neighbors = triangulation.Where(t =>
             {
                 var hasCommonEdge = t.Edges.Any(v => triangle.Edges.Contains(v));

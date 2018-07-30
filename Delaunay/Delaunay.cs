@@ -9,18 +9,24 @@ namespace Delaunay
     {
         private double MaxX { get; set; }
         private double MaxY { get; set; }
+        private List<Triangle> border;
 
         public IEnumerable<Point> GeneratePoints(int amount, double maxX, double maxY)
         {
             MaxX = maxX;
             MaxY = maxY;
-            var points = new List<Point>() {
-                new Point(0, 0) , new Point(0, MaxY), new Point(MaxX, MaxY),
-                new Point(0, 0),new Point(MaxX, MaxY), new Point(MaxX, 0)
-            };
-            var random = new Random();
+            // TODO make more beautiful
+            var point0 = new Point(0, 0);
+            var point1 = new Point(0, MaxY);
+            var point2 = new Point(MaxX, MaxY);
+            var point3 = new Point(MaxX, 0);
+            var points = new List<Point>() { point0, point1, point2, point3 };
+            var tri1 = new Triangle(point0, point1, point2);
+            var tri2 = new Triangle(point0, point2, point3);
+            border = new List<Triangle>() { tri1, tri2 };
 
-            for (int i = 0; i < amount; i++)
+            var random = new Random();
+            for (int i = 0; i < amount - 4; i++)
             {
                 var pointX = random.NextDouble() * MaxX;
                 var pointY = random.NextDouble() * MaxY;
@@ -38,8 +44,9 @@ namespace Delaunay
             //var tri1 = new Triangle(new Point(0, 0), new Point(0, MaxY), new Point(MaxX, MaxY));
             //var tri2 = new Triangle(new Point(0, 0), new Point(MaxX, MaxY), new Point(MaxX, 0));
             //var triangulation = new HashSet<Triangle>() { tri1, tri2 };
-            var supraTriangle = GenerateSupraTriangle();
-            var triangulation = new HashSet<Triangle>() { supraTriangle };
+            //var supraTriangle = GenerateSupraTriangle();
+            //var triangulation = new HashSet<Triangle>() { supraTriangle };
+            var triangulation = new HashSet<Triangle>(border);
 
             foreach (var point in points)
             {
@@ -55,7 +62,7 @@ namespace Delaunay
                 }
             }
 
-            triangulation.RemoveWhere(o => o.Vertices.Any(v => supraTriangle.Vertices.Contains(v)));
+            //triangulation.RemoveWhere(o => o.Vertices.Any(v => supraTriangle.Vertices.Contains(v)));
 
             return triangulation;
         }

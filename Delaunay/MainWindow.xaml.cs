@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using System.Windows.Shapes;
@@ -14,11 +15,17 @@ namespace Delaunay
         {
             InitializeComponent();
 
-            var points = delaunay.GeneratePoints(100, 800, 400);
+            var points = delaunay.GeneratePoints(1000, 800, 400);
             DrawPoints(points);
+
+            var delaunayTimer = Stopwatch.StartNew();
             var triangulation = delaunay.BowyerWatson(points);
+            delaunayTimer.Stop();
             DrawTriangulation(triangulation);
+
+            var voronoiTimer = Stopwatch.StartNew();
             var vornoiEdges = voronoi.GenerateEdgesFromDelaunay(triangulation);
+            voronoiTimer.Stop();
             DrawVoronoi(vornoiEdges);
         }
 

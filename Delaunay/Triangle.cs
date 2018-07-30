@@ -14,6 +14,8 @@ namespace Delaunay
 
         public Point? Circumcenter {
             get {
+                // TODO: only calculate when updating triangle vertices
+                // https://en.wikipedia.org/wiki/Circumscribed_circle
                 var p0 = Vertices[0];
                 var p1 = Vertices[1];
                 var p2 = Vertices[2];
