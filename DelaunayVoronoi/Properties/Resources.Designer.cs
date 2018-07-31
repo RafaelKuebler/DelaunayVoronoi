@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Delaunay.Properties
+namespace DelaunayVoronoi.Properties
 {
 
 
