@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Windows;
 using System.Windows.Shapes;
 
-namespace Delaunay
+namespace DelaunayVoronoi
 {
     public partial class MainWindow : Window
     {
@@ -15,8 +14,7 @@ namespace Delaunay
         {
             InitializeComponent();
 
-            var points = delaunay.GeneratePoints(1000, 800, 400);
-            DrawPoints(points);
+            var points = delaunay.GeneratePoints(5000, 800, 400);
 
             var delaunayTimer = Stopwatch.StartNew();
             var triangulation = delaunay.BowyerWatson(points);
@@ -27,6 +25,8 @@ namespace Delaunay
             var vornoiEdges = voronoi.GenerateEdgesFromDelaunay(triangulation);
             voronoiTimer.Stop();
             DrawVoronoi(vornoiEdges);
+
+            DrawPoints(points);
         }
 
         private void DrawPoints(IEnumerable<Point> points)
@@ -37,8 +37,8 @@ namespace Delaunay
                 myEllipse.Fill = System.Windows.Media.Brushes.Red;
                 myEllipse.HorizontalAlignment = HorizontalAlignment.Left;
                 myEllipse.VerticalAlignment = VerticalAlignment.Top;
-                myEllipse.Width = 10;
-                myEllipse.Height = 10;
+                myEllipse.Width = 1;
+                myEllipse.Height = 1;
                 var ellipseX = point.X - 0.5 * myEllipse.Height;
                 var ellipseY = point.Y - 0.5 * myEllipse.Width;
                 myEllipse.Margin = new Thickness(ellipseX, ellipseY, 0, 0);
@@ -49,13 +49,19 @@ namespace Delaunay
 
         private void DrawTriangulation(IEnumerable<Triangle> triangulation)
         {
-            var edges = triangulation.SelectMany(o => o.Edges).Distinct();
+            var edges = new List<Edge>();
+            foreach (var triangle in triangulation)
+            {
+                edges.Add(new Edge(triangle.Vertices[0], triangle.Vertices[1]));
+                edges.Add(new Edge(triangle.Vertices[1], triangle.Vertices[2]));
+                edges.Add(new Edge(triangle.Vertices[2], triangle.Vertices[0]));
+            }
 
             foreach (var edge in edges)
             {
                 var line = new Line();
                 line.Stroke = System.Windows.Media.Brushes.LightSteelBlue;
-                line.StrokeThickness = 2;
+                line.StrokeThickness = 0.5;
 
                 line.X1 = edge.Point1.X;
                 line.X2 = edge.Point2.X;
@@ -72,7 +78,7 @@ namespace Delaunay
             {
                 var line = new Line();
                 line.Stroke = System.Windows.Media.Brushes.DarkViolet;
-                line.StrokeThickness = 2;
+                line.StrokeThickness = 1;
 
                 line.X1 = edge.Point1.X;
                 line.X2 = edge.Point2.X;

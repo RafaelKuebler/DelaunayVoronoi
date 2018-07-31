@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Point.cs" />
     <Compile Include="Edge.cs" />
     <Compile Include="Triangle.cs" />
     <Compile Include="Voronoi.cs" />

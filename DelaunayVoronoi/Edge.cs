@@ -1,21 +1,14 @@
-﻿using System.Windows;
-
-namespace Delaunay
+﻿namespace DelaunayVoronoi
 {
     public class Edge
     {
-        public Point Point1 { get; set; }
-        public Point Point2 { get; set; }
+        public Point Point1 { get; }
+        public Point Point2 { get; }
 
         public Edge(Point point1, Point point2)
         {
             Point1 = point1;
             Point2 = point2;
-        }
-
-        public override string ToString()
-        {
-            return $"Edge: ({Point1}, {Point2})";
         }
 
         public override bool Equals(object obj)
