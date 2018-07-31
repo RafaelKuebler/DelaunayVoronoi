@@ -1,12 +1,16 @@
-﻿# C# Delaunay triangulation (Bowyer–Watson algorithm)
+﻿# C# Delaunay triangulation + Voronoi Diagram
 
 A C# implementation of the [Bowyer–Watson algorithm](https://en.wikipedia.org/wiki/Bowyer%E2%80%93Watson_algorithm).
-The result is a [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation#Algorithms) for a set of randomly generated points.
+The result is a [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) for a set of randomly generated points.
+Following the Delaunay triangulation, the dual [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) is constructed.
+
+A screenshot of the Delaunay triangulation and the Voronoi diagram for 5000 points.
+![Delaunay triangulation and Voronoi diagram for 5000 points](screenshots/delaunay_voronoi.png)
 
 ## Why C#?
 
 It just looks good. Also, blog posts listed below talking about procedural content and map generation caught my eye.
-Since my intention is to port the algorithm to the Unity game engine for future projects, I decided to stick to C#, as it is Unity's scripting language of choice.
+Since my intention is to port the algorithms to the [Unity game engine](https://unity3d.com/) for future projects, I decided to stick to C#, as it is Unity's scripting language of choice.
 
 ## License
 
