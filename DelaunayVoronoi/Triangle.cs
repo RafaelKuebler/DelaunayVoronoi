@@ -5,7 +5,7 @@ namespace DelaunayVoronoi
 {
     public class Triangle
     {
-        public Point[] Vertices { get; } = new Point[3];
+        public Point[] Vertices { get; }
         public Point Circumcenter { get; private set; }
         public double RadiusSquared;
 
@@ -27,23 +27,34 @@ namespace DelaunayVoronoi
 
         public Triangle(Point point1, Point point2, Point point3)
         {
-            if (!IsCounterClockwise(point1, point2, point3))
-            {
-                Vertices[0] = point1;
-                Vertices[1] = point3;
-                Vertices[2] = point2;
-            }
-            else
-            {
-                Vertices[0] = point1;
-                Vertices[1] = point2;
-                Vertices[2] = point3;
-            }
+            Vertices = new Point[3] { point1, point2, point3 };
+            CorrectVertexOrder();
+            StoreTrianglesInVertices();
+            UpdateCircumcircle();
+        }
 
+        private void StoreTrianglesInVertices()
+        {
             Vertices[0].AdjacentTriangles.Add(this);
             Vertices[1].AdjacentTriangles.Add(this);
             Vertices[2].AdjacentTriangles.Add(this);
-            UpdateCircumcircle();
+        }
+
+        private void CorrectVertexOrder()
+        {
+            if (!AreVerticesCounterClockwise())
+            {
+                var temp = Vertices[1];
+                Vertices[1] = Vertices[2];
+                Vertices[2] = temp;
+            }
+        }
+
+        private bool AreVerticesCounterClockwise()
+        {
+            var result = (Vertices[1].X - Vertices[0].X) * (Vertices[2].Y - Vertices[0].Y) -
+                (Vertices[2].X - Vertices[0].X) * (Vertices[1].Y - Vertices[0].Y);
+            return result > 0;
         }
 
         private void UpdateCircumcircle()
@@ -69,13 +80,6 @@ namespace DelaunayVoronoi
             var center = new Point(aux1 / div, aux2 / div);
             Circumcenter = center;
             RadiusSquared = (center.X - p0.X) * (center.X - p0.X) + (center.Y - p0.Y) * (center.Y - p0.Y);
-        }
-
-        private bool IsCounterClockwise(Point point1, Point point2, Point point3)
-        {
-            var result = (point2.X - point1.X) * (point3.Y - point1.Y) -
-                (point3.X - point1.X) * (point2.Y - point1.Y);
-            return result > 0;
         }
 
         public bool SharesEdgeWith(Triangle triangle)

@@ -6,12 +6,13 @@ namespace DelaunayVoronoi
     {
         public double X { get; }
         public double Y { get; }
-        public HashSet<Triangle> AdjacentTriangles { get; } = new HashSet<Triangle>();
+        public HashSet<Triangle> AdjacentTriangles { get; }
 
         public Point(double x, double y)
         {
             X = x;
             Y = y;
+            AdjacentTriangles = new HashSet<Triangle>();
         }
     }
 }
