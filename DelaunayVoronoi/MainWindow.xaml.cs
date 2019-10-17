@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Shapes;
@@ -33,12 +33,14 @@ namespace DelaunayVoronoi
         {
             foreach (var point in points)
             {
-                var myEllipse = new Ellipse();
-                myEllipse.Fill = System.Windows.Media.Brushes.Red;
-                myEllipse.HorizontalAlignment = HorizontalAlignment.Left;
-                myEllipse.VerticalAlignment = VerticalAlignment.Top;
-                myEllipse.Width = 1;
-                myEllipse.Height = 1;
+                var myEllipse = new Ellipse
+                {
+                    Fill = System.Windows.Media.Brushes.Red,
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    VerticalAlignment = VerticalAlignment.Top,
+                    Width = 1,
+                    Height = 1
+                };
                 var ellipseX = point.X - 0.5 * myEllipse.Height;
                 var ellipseY = point.Y - 0.5 * myEllipse.Width;
                 myEllipse.Margin = new Thickness(ellipseX, ellipseY, 0, 0);
@@ -59,14 +61,16 @@ namespace DelaunayVoronoi
 
             foreach (var edge in edges)
             {
-                var line = new Line();
-                line.Stroke = System.Windows.Media.Brushes.LightSteelBlue;
-                line.StrokeThickness = 0.5;
+                var line = new Line
+                {
+                    Stroke = System.Windows.Media.Brushes.LightSteelBlue,
+                    StrokeThickness = 0.5,
 
-                line.X1 = edge.Point1.X;
-                line.X2 = edge.Point2.X;
-                line.Y1 = edge.Point1.Y;
-                line.Y2 = edge.Point2.Y;
+                    X1 = edge.Point1.X,
+                    X2 = edge.Point2.X,
+                    Y1 = edge.Point1.Y,
+                    Y2 = edge.Point2.Y
+                };
 
                 Canvas.Children.Add(line);
             }
@@ -76,14 +80,16 @@ namespace DelaunayVoronoi
         {
             foreach (var edge in voronoiEdges)
             {
-                var line = new Line();
-                line.Stroke = System.Windows.Media.Brushes.DarkViolet;
-                line.StrokeThickness = 1;
+                var line = new Line
+                {
+                    Stroke = System.Windows.Media.Brushes.DarkViolet,
+                    StrokeThickness = 1,
 
-                line.X1 = edge.Point1.X;
-                line.X2 = edge.Point2.X;
-                line.Y1 = edge.Point1.Y;
-                line.Y2 = edge.Point2.Y;
+                    X1 = edge.Point1.X,
+                    X2 = edge.Point2.X,
+                    Y1 = edge.Point1.Y,
+                    Y2 = edge.Point2.Y
+                };
 
                 Canvas.Children.Add(line);
             }

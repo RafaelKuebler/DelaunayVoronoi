@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace DelaunayVoronoi
@@ -6,6 +7,7 @@ namespace DelaunayVoronoi
     public class Triangle
     {
         public Point[] Vertices { get; }
+        public Point[] BorderVertices { get; }
         public Point Circumcenter { get; private set; }
         public double RadiusSquared;
 
@@ -29,11 +31,13 @@ namespace DelaunayVoronoi
         {
             Vertices = new Point[3] { point1, point2, point3 };
             CorrectVertexOrder();
-            StoreTrianglesInVertices();
+            StoreTriangleInVertices();
             UpdateCircumcircle();
+
+            BorderVertices = Vertices.Where(v => v.IsBorderPoint).ToArray();
         }
 
-        private void StoreTrianglesInVertices()
+        private void StoreTriangleInVertices()
         {
             Vertices[0].AdjacentTriangles.Add(this);
             Vertices[1].AdjacentTriangles.Add(this);
@@ -68,12 +72,13 @@ namespace DelaunayVoronoi
             var dB = p1.X * p1.X + p1.Y * p1.Y;
             var dC = p2.X * p2.X + p2.Y * p2.Y;
 
-            var aux1 = (dA * (p2.Y - p1.Y) + dB * (p0.Y - p2.Y) + dC * (p1.Y - p0.Y));
+            var aux1 = dA * (p2.Y - p1.Y) + dB * (p0.Y - p2.Y) + dC * (p1.Y - p0.Y);
             var aux2 = -(dA * (p2.X - p1.X) + dB * (p0.X - p2.X) + dC * (p1.X - p0.X));
-            var div = (2 * (p0.X * (p2.Y - p1.Y) + p1.X * (p0.Y - p2.Y) + p2.X * (p1.Y - p0.Y)));
+            var div = 2 * (p0.X * (p2.Y - p1.Y) + p1.X * (p0.Y - p2.Y) + p2.X * (p1.Y - p0.Y));
 
             if (div == 0)
             {
+                Debug.WriteLine($"({p0.X}, {p0.Y}), ({p1.X}, {p1.Y}), ({p2.X}, {p2.Y})");
                 throw new System.Exception();
             }
 
@@ -90,9 +95,33 @@ namespace DelaunayVoronoi
 
         public bool IsPointInsideCircumcircle(Point point)
         {
+            if (BorderVertices.Length == 1)
+            {
+                var otherPoints = Vertices.Where(v => !BorderVertices.Contains(v));
+                var p0 = otherPoints.ElementAt(0);
+                var p1 = otherPoints.ElementAt(0);
+
+                return IsPointLeftOfLine(p0, p1, point);
+            }
+            else if (BorderVertices.Length == 2)
+            {
+                var p0 = BorderVertices[0];
+                var p1 = BorderVertices[1];
+                var p2 = Vertices.Where(v => !BorderVertices.Contains(v)).First();
+
+                return IsPointLeftOfLine(p2, p1 + (p2 - p0), point);
+            }
+
             var d_squared = (point.X - Circumcenter.X) * (point.X - Circumcenter.X) +
                 (point.Y - Circumcenter.Y) * (point.Y - Circumcenter.Y);
             return d_squared < RadiusSquared;
+        }
+
+        private bool IsPointLeftOfLine(Point a, Point b, Point point)
+        {
+            // https://math.stackexchange.com/questions/274712/calculate-on-which-side-of-a-straight-line-is-a-given-point-located
+            var d = (point.X - a.X) * (b.Y - a.Y) - (point.Y - a.Y) * (b.X - a.X);
+            return d >= 0;
         }
     }
 }

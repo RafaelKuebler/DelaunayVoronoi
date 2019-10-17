@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,25 +8,15 @@ namespace DelaunayVoronoi
     {
         private double MaxX { get; set; }
         private double MaxY { get; set; }
-        private IEnumerable<Triangle> border;
 
         public IEnumerable<Point> GeneratePoints(int amount, double maxX, double maxY)
         {
             MaxX = maxX;
             MaxY = maxY;
 
-            // TODO make more beautiful
-            var point0 = new Point(0, 0);
-            var point1 = new Point(0, MaxY);
-            var point2 = new Point(MaxX, MaxY);
-            var point3 = new Point(MaxX, 0);
-            var points = new List<Point>() { point0, point1, point2, point3 };
-            var tri1 = new Triangle(point0, point1, point2);
-            var tri2 = new Triangle(point0, point2, point3);
-            border = new List<Triangle>() { tri1, tri2 };
-
             var random = new Random();
-            for (int i = 0; i < amount - 4; i++)
+            var points = new List<Point>();
+            for (int i = 0; i < amount; i++)
             {
                 var pointX = random.NextDouble() * MaxX;
                 var pointY = random.NextDouble() * MaxY;
@@ -38,8 +28,8 @@ namespace DelaunayVoronoi
 
         public IEnumerable<Triangle> BowyerWatson(IEnumerable<Point> points)
         {
-            //var supraTriangle = GenerateSupraTriangle();
-            var triangulation = new HashSet<Triangle>(border);
+            var supraTriangle = GenerateSupraTriangle();
+            var triangulation = new HashSet<Triangle>() { supraTriangle };
 
             foreach (var point in points)
             {
@@ -62,7 +52,7 @@ namespace DelaunayVoronoi
                 }
             }
 
-            //triangulation.RemoveWhere(o => o.Vertices.Any(v => supraTriangle.Vertices.Contains(v)));
+            triangulation.RemoveWhere(o => o.Vertices.Any(v => supraTriangle.Vertices.Contains(v)));
             return triangulation;
         }
 
