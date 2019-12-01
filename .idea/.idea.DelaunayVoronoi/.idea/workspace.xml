@@ -20,25 +20,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
+            <state relative-caret-position="188">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
-                <marker date="1575212610707" expanded="false" signature="6:100" ph="..." />
-                <marker date="1575212610707" expanded="true" signature="127:3701" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="167:3699" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="384:1248" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1013:1210" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1318:2205" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1434:2160" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1649:1858" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1729:1840" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1979:2146" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2284:2816" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2387:2658" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2866:3305" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2889:2984" ph="/* 1  -&gt; maxX ... */" />
-                <marker date="1575212610707" expanded="true" signature="3405:3693" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="3525:3658" ph="{...}" />
+                <marker date="1575221803412" expanded="false" signature="6:100" ph="..." />
+                <marker date="1575221803412" expanded="true" signature="127:3702" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="167:3700" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="384:1248" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="1013:1210" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="1318:2205" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="1434:2160" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="1649:1858" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="1729:1840" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="1979:2146" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="2284:2817" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="2388:2659" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="2867:3306" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="2890:2985" ph="/* 1  -&gt; maxX ... */" />
+                <marker date="1575221803412" expanded="true" signature="3406:3694" ph="{...}" />
+                <marker date="1575221803412" expanded="true" signature="3526:3659" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -47,27 +47,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+            <state relative-caret-position="391">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <marker date="1575212610707" expanded="true" signature="6:52" ph="..." />
-                <marker date="1575212610707" expanded="true" signature="79:3408" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="107:3406" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="324:908" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="341:898" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="461:849" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="550:778" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="651:756" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="982:1558" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1053:1195" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1212:1354" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="1601:2446" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2158:2232" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2538:2725" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2783:3099" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2880:3043" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="2950:3029" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="3162:3400" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="6:66" ph="..." />
+                <marker date="1575215730050" expanded="true" signature="92:3419" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="120:3417" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="337:919" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="354:909" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="474:861" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="563:791" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="664:769" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="993:1569" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="1064:1206" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="1223:1365" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="1612:2457" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="2169:2243" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="2549:2736" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="2794:3110" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="2891:3054" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="2961:3040" ph="{...}" />
+                <marker date="1575215730050" expanded="true" signature="3173:3411" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,51 +76,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-              <folding>
-                <marker date="1575212610707" expanded="true" signature="60:625" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="87:623" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="189:617" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="303:573" ph="{...}" />
-                <marker date="1575212610707" expanded="true" signature="392:559" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Point.cs">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding>
-                <marker date="1575212861953" expanded="true" signature="6:47" ph="..." />
-                <marker date="1575212861953" expanded="true" signature="74:350" ph="{...}" />
-                <marker date="1575212861953" expanded="true" signature="99:348" ph="{...}" />
-                <marker date="1575212861953" expanded="true" signature="284:342" ph="{...}" />
+                <marker date="1575213174028" expanded="true" signature="60:620" ph="{...}" />
+                <marker date="1575213174028" expanded="true" signature="87:618" ph="{...}" />
+                <marker date="1575213174028" expanded="true" signature="184:612" ph="{...}" />
+                <marker date="1575213174028" expanded="true" signature="298:568" ph="{...}" />
+                <marker date="1575213174028" expanded="true" signature="387:554" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Point.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <folding>
+                <marker date="1575212948471" expanded="true" signature="6:47" ph="..." />
+                <marker date="1575212948471" expanded="true" signature="74:350" ph="{...}" />
+                <marker date="1575212948471" expanded="true" signature="99:348" ph="{...}" />
+                <marker date="1575212948471" expanded="true" signature="284:342" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="603">
+              <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
               <folding>
-                <marker date="1575212610704" expanded="false" signature="6:144" ph="..." />
-                <marker date="1575212610704" expanded="true" signature="171:3132" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="218:3130" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="378:968" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="1028:1704" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="1080:1694" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="1781:2602" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="1885:2156" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="2197:2592" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="2668:3124" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="2725:3114" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="6:144" ph="..." />
+                <marker date="1575222577370" expanded="true" signature="171:3388" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="218:3386" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="378:498" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="541:1077" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="1137:1813" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="1189:1803" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="1889:2733" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="2016:2287" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="2328:2723" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="2798:3254" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="2855:3244" ph="{...}" />
+                <marker date="1575222577370" expanded="true" signature="3325:3380" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -129,9 +131,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="176">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding>
-                <marker date="1575199452810" expanded="true" signature="0:519" ph="&lt;&lt;Canvas Name=&quot;Canvas&quot; Margin=&quot;20,20,20,20&quot; /&gt;.../&gt;" />
+                <marker date="1575222453874" expanded="true" signature="0:659" ph="&lt;&lt;Canvas Name=&quot;Canvas&quot; Margin=&quot;85,20,20,20&quot; &gt;&#10;        &lt;Button x:Name=&quot;Rebuild_&quot; Content=&quot;Rebuild&quot; Width=&quot;75&quot;/&gt;&#10;    &lt;/Canvas&gt;.../&gt;" />
+                <marker date="1575222453874" expanded="true" signature="464:649" ph="&lt;&lt;Button x:Name=&quot;Rebuild_&quot; Content=&quot;Rebuild&quot; Width=&quot;75&quot;/&gt;.../&gt;" />
               </folding>
             </state>
           </provider>
@@ -141,14 +145,14 @@
         <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Edge.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="50" />
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
               <folding>
-                <marker date="1575212610704" expanded="true" signature="6:47" ph="..." />
-                <marker date="1575212610704" expanded="true" signature="74:824" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="127:822" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="261:339" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="382:529" ph="{...}" />
-                <marker date="1575212610704" expanded="true" signature="569:816" ph="{...}" />
+                <marker date="1575214683515" expanded="true" signature="6:47" ph="..." />
+                <marker date="1575214683515" expanded="true" signature="74:819" ph="{...}" />
+                <marker date="1575214683515" expanded="true" signature="127:817" ph="{...}" />
+                <marker date="1575214683515" expanded="true" signature="256:334" ph="{...}" />
+                <marker date="1575214683515" expanded="true" signature="377:524" ph="{...}" />
+                <marker date="1575214683515" expanded="true" signature="564:811" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -180,12 +184,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs" />
-        <option value="$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs" />
-        <option value="$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs" />
-        <option value="$PROJECT_DIR$/DelaunayVoronoi/Edge.cs" />
-        <option value="$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs" />
         <option value="$PROJECT_DIR$/DelaunayVoronoi/Point.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Edge.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs" />
       </list>
     </option>
   </component>
@@ -281,12 +285,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575201139427</updated>
-      <workItem from="1575201144486" duration="11714000" />
+      <workItem from="1575201144486" duration="17034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11750000" />
+    <option name="totallyTimeSpent" value="17070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,7 +312,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32502708" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -561,125 +565,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding>
-            <marker date="1575212610707" expanded="true" signature="60:625" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="87:623" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="189:617" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="303:573" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="392:559" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Edge.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="50" />
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
           <folding>
-            <marker date="1575212610704" expanded="true" signature="6:47" ph="..." />
-            <marker date="1575212610704" expanded="true" signature="74:824" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="127:822" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="261:339" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="382:529" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="569:816" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1575199452810" expanded="true" signature="0:519" ph="&lt;&lt;Canvas Name=&quot;Canvas&quot; Margin=&quot;20,20,20,20&quot; /&gt;.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
-          <folding>
-            <marker date="1575212610707" expanded="true" signature="6:52" ph="..." />
-            <marker date="1575212610707" expanded="true" signature="79:3408" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="107:3406" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="324:908" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="341:898" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="461:849" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="550:778" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="651:756" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="982:1558" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1053:1195" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1212:1354" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1601:2446" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2158:2232" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2538:2725" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2783:3099" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2880:3043" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2950:3029" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="3162:3400" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
-          <folding>
-            <marker date="1575212610707" expanded="false" signature="6:100" ph="..." />
-            <marker date="1575212610707" expanded="true" signature="127:3701" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="167:3699" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="384:1248" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1013:1210" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1318:2205" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1434:2160" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1649:1858" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1729:1840" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="1979:2146" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2284:2816" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2387:2658" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2866:3305" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="2889:2984" ph="/* 1  -&gt; maxX ... */" />
-            <marker date="1575212610707" expanded="true" signature="3405:3693" ph="{...}" />
-            <marker date="1575212610707" expanded="true" signature="3525:3658" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding>
-            <marker date="1575212610704" expanded="false" signature="6:144" ph="..." />
-            <marker date="1575212610704" expanded="true" signature="171:3132" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="218:3130" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="378:968" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="1028:1704" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="1080:1694" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="1781:2602" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="1885:2156" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="2197:2592" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="2668:3124" ph="{...}" />
-            <marker date="1575212610704" expanded="true" signature="2725:3114" ph="{...}" />
+            <marker date="1575214683515" expanded="true" signature="6:47" ph="..." />
+            <marker date="1575214683515" expanded="true" signature="74:819" ph="{...}" />
+            <marker date="1575214683515" expanded="true" signature="127:817" ph="{...}" />
+            <marker date="1575214683515" expanded="true" signature="256:334" ph="{...}" />
+            <marker date="1575214683515" expanded="true" signature="377:524" ph="{...}" />
+            <marker date="1575214683515" expanded="true" signature="564:811" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Point.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="144">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
-            <marker date="1575212861953" expanded="true" signature="6:47" ph="..." />
-            <marker date="1575212861953" expanded="true" signature="74:350" ph="{...}" />
-            <marker date="1575212861953" expanded="true" signature="99:348" ph="{...}" />
-            <marker date="1575212861953" expanded="true" signature="284:342" ph="{...}" />
+            <marker date="1575212948471" expanded="true" signature="6:47" ph="..." />
+            <marker date="1575212948471" expanded="true" signature="74:350" ph="{...}" />
+            <marker date="1575212948471" expanded="true" signature="99:348" ph="{...}" />
+            <marker date="1575212948471" expanded="true" signature="284:342" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <marker date="1575213174028" expanded="true" signature="60:620" ph="{...}" />
+            <marker date="1575213174028" expanded="true" signature="87:618" ph="{...}" />
+            <marker date="1575213174028" expanded="true" signature="184:612" ph="{...}" />
+            <marker date="1575213174028" expanded="true" signature="298:568" ph="{...}" />
+            <marker date="1575213174028" expanded="true" signature="387:554" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1575215730050" expanded="true" signature="6:66" ph="..." />
+            <marker date="1575215730050" expanded="true" signature="92:3419" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="120:3417" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="337:919" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="354:909" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="474:861" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="563:791" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="664:769" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="993:1569" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="1064:1206" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="1223:1365" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="1612:2457" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="2169:2243" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="2549:2736" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="2794:3110" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="2891:3054" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="2961:3040" ph="{...}" />
+            <marker date="1575215730050" expanded="true" signature="3173:3411" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <marker date="1575221803412" expanded="false" signature="6:100" ph="..." />
+            <marker date="1575221803412" expanded="true" signature="127:3702" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="167:3700" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="384:1248" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="1013:1210" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="1318:2205" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="1434:2160" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="1649:1858" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="1729:1840" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="1979:2146" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="2284:2817" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="2388:2659" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="2867:3306" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="2890:2985" ph="/* 1  -&gt; maxX ... */" />
+            <marker date="1575221803412" expanded="true" signature="3406:3694" ph="{...}" />
+            <marker date="1575221803412" expanded="true" signature="3526:3659" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <marker date="1575222453874" expanded="true" signature="0:659" ph="&lt;&lt;Canvas Name=&quot;Canvas&quot; Margin=&quot;85,20,20,20&quot; &gt;&#10;        &lt;Button x:Name=&quot;Rebuild_&quot; Content=&quot;Rebuild&quot; Width=&quot;75&quot;/&gt;&#10;    &lt;/Canvas&gt;.../&gt;" />
+            <marker date="1575222453874" expanded="true" signature="464:649" ph="&lt;&lt;Button x:Name=&quot;Rebuild_&quot; Content=&quot;Rebuild&quot; Width=&quot;75&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+          <folding>
+            <marker date="1575222577370" expanded="true" signature="6:144" ph="..." />
+            <marker date="1575222577370" expanded="true" signature="171:3388" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="218:3386" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="378:498" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="541:1077" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="1137:1813" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="1189:1803" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="1889:2733" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="2016:2287" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="2328:2723" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="2798:3254" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="2855:3244" ph="{...}" />
+            <marker date="1575222577370" expanded="true" signature="3325:3380" ph="{...}" />
           </folding>
         </state>
       </provider>

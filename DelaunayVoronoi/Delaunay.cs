@@ -44,7 +44,7 @@ namespace DelaunayVoronoi
             foreach (var point in points)
             {
                 var badTriangles = FindBadTriangles(in point, in triangulation);
-                var polygon = FindHoleBoundaries(badTriangles);
+                var polygon = FindHoleBoundaries(in badTriangles);
 
                 foreach (var triangle in badTriangles)
                 {
@@ -65,9 +65,10 @@ namespace DelaunayVoronoi
             return triangulation;
         }
 
-        private List<Edge> FindHoleBoundaries(HashSet<Triangle> badTriangles)
+        private List<Edge> FindHoleBoundaries(in HashSet<Triangle> badTriangles)
         {
             var edges = new List<Edge>();
+
             foreach (var triangle in badTriangles)
             {
                 edges.Add(new Edge(triangle.Vertices[0], triangle.Vertices[1]));

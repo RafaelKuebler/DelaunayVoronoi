@@ -16,17 +16,24 @@ namespace DelaunayVoronoi
             InitializeComponent();
             //С оптимизацией
 
+            BuildVoronoiDiagram();
+        }
+
+        public void BuildVoronoiDiagram()
+        {
             var points = delaunay.GeneratePoints(5000, 800, 400);
 
             var delaunayTimer = Stopwatch.StartNew();
             var triangulation = delaunay.BowyerWatson(in points);
             delaunayTimer.Stop();
-            DrawTriangulation(triangulation);
+
+            DrawTriangulation(in triangulation);
 
             var voronoiTimer = Stopwatch.StartNew();
-            var vornoiEdges = voronoi.GenerateEdgesFromDelaunay(triangulation);
+            var vornoiEdges = voronoi.GenerateEdgesFromDelaunay(in triangulation);
             voronoiTimer.Stop();
-            DrawVoronoi(vornoiEdges);
+
+            DrawVoronoi(in vornoiEdges);
 
             DrawPoints(points);
         }
@@ -49,9 +56,9 @@ namespace DelaunayVoronoi
             }
         }
 
-        private void DrawTriangulation(IEnumerable<Triangle> triangulation)
+        private void DrawTriangulation(in HashSet<Triangle> triangulation)
         {
-            var edges = new List<Edge>();
+            var edges = new List<Edge>(triangulation.Count*3){};
             foreach (var triangle in triangulation)
             {
                 edges.Add(new Edge(triangle.Vertices[0], triangle.Vertices[1]));
@@ -74,7 +81,7 @@ namespace DelaunayVoronoi
             }
         }
 
-        private void DrawVoronoi(IEnumerable<Edge> voronoiEdges)
+        private void DrawVoronoi(in HashSet<Edge> voronoiEdges)
         {
             foreach (var edge in voronoiEdges)
             {
@@ -89,6 +96,12 @@ namespace DelaunayVoronoi
 
                 Canvas.Children.Add(line);
             }
+        }
+
+        private void Rebuild__Click(object sender, RoutedEventArgs e)
+        {
+            Canvas.Children.Clear();
+            BuildVoronoiDiagram();
         }
     }
 }

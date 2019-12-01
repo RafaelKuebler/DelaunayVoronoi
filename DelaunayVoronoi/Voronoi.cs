@@ -4,7 +4,7 @@ namespace DelaunayVoronoi
 {
     public class Voronoi
     {
-        public IEnumerable<Edge> GenerateEdgesFromDelaunay(IEnumerable<Triangle> triangulation)
+        public HashSet<Edge> GenerateEdgesFromDelaunay(in HashSet<Triangle> triangulation)
         {
             var voronoiEdges = new HashSet<Edge>();
             foreach (var triangle in triangulation)

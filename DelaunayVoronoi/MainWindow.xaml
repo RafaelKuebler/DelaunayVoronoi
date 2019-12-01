@@ -6,5 +6,7 @@
         xmlns:local="clr-namespace:DelaunayVoronoi"
         mc:Ignorable="d"
         Title="MainWindow" Height="480" Width="850">
-    <Canvas Name="Canvas" Margin="20,20,20,20" />
+    <Canvas Name="Canvas" Margin="10,0,20,20" Height="421" VerticalAlignment="Bottom" >
+        <Button x:Name="Rebuild_" Content="Rebuild" Width="75" Click="Rebuild__Click"/>
+    </Canvas>
 </Window>

@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-
 namespace DelaunayVoronoi
 {
     public class Triangle
@@ -22,10 +22,8 @@ namespace DelaunayVoronoi
                             neighbors.Add(triangle);
                         }
                     }
-
                     neighbors.UnionWith(neighbors);
                 }
-
                 return neighbors;
             }
         }
