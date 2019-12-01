@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Windows;
 
 namespace DelaunayVoronoi
 {
     public class Triangle
     {
-        public Point[] Vertices = new Point[3];
-        public Point Circumcenter;
-        private double _radiusSquared;
+        public  Point[] Vertices = new Point[3];
+        public  Point   Circumcenter;
+        private double  _radius;
 
-        public HashSet<Triangle> TrianglesWithSharedEdge {
+        public HashSet<Triangle> TrianglesWithSharedEdge
+        {
             get
             {
                 var neighbors = new HashSet<Triangle>();
@@ -24,13 +26,15 @@ namespace DelaunayVoronoi
                             neighbors.Add(triangle);
                         }
                     }
+
                     neighbors.UnionWith(neighbors);
                 }
+
                 return neighbors;
             }
         }
 
-        public Triangle(in Point point1,in Point point2,in Point point3)
+        public Triangle(in Point point1, in Point point2, in Point point3)
         {
             if (!IsCounterClockwise(point1, point2, point3))
             {
@@ -62,7 +66,7 @@ namespace DelaunayVoronoi
 
             var aux1 = (dA * (p2.Y - p1.Y) + dB * (p0.Y - p2.Y) + dC * (p1.Y - p0.Y));
             var aux2 = -(dA * (p2.X - p1.X) + dB * (p0.X - p2.X) + dC * (p1.X - p0.X));
-            var div = (2 * (p0.X * (p2.Y - p1.Y) + p1.X * (p0.Y - p2.Y) + p2.X * (p1.Y - p0.Y)));
+            var div  = (2 * (p0.X * (p2.Y - p1.Y) + p1.X * (p0.Y - p2.Y) + p2.X * (p1.Y - p0.Y)));
 
             if (div == 0)
             {
@@ -71,16 +75,16 @@ namespace DelaunayVoronoi
 
             var center = new Point(aux1 / div, aux2 / div);
             Circumcenter = center;
-            _radiusSquared = (center.X - p0.X) * (center.X - p0.X) + (center.Y - p0.Y) * (center.Y - p0.Y);
+            _radius      = (center.X - p0.X) + (center.Y - p0.Y);
         }
 
         private bool IsCounterClockwise(in Point point1, in Point point2, in Point point3)
         {
             var result = (point2.X - point1.X) * (point3.Y - point1.Y) -
-                (point3.X - point1.X) * (point2.Y - point1.Y);
+                         (point3.X - point1.X) * (point2.Y - point1.Y);
             return result > 0;
         }
-        
+
         public bool SharesEdgeWith(in Triangle triangle)
         {
             int shaderVerticesCount = 0;
@@ -95,13 +99,27 @@ namespace DelaunayVoronoi
 
             return shaderVerticesCount == 2;
         }
-        
+
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool IsPointInsideCircumcircle(in Point point)
         {
             var d_squared = (point.X - Circumcenter.X) * (point.X - Circumcenter.X) +
                             (point.Y - Circumcenter.Y) * (point.Y - Circumcenter.Y);
-            return d_squared < _radiusSquared;
+
+//                var dx = Math.Abs(point.X - Circumcenter.X);
+//                var dy = Math.Abs(point.Y - Circumcenter.Y);
+//
+//                if (dx > _radius)
+//                    return false;
+//                if (dy > _radius)
+//                    return false;
+//
+//                if ((dx * dx + dy * dy) < _radius * _radius)
+//                {
+//                    return true;
+//                }
+
+                return d_squared < _radius * _radius;
         }
     }
 }
