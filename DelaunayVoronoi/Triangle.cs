@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+
 namespace DelaunayVoronoi
 {
     public class Triangle
     {
-        public Point[] Vertices { get; } = new Point[3];
-        public Point Circumcenter { get; private set; }
+        public Point[] Vertices = new Point[3];
+        public Point Circumcenter;
         private double _radiusSquared;
 
         public HashSet<Triangle> TrianglesWithSharedEdge {
@@ -78,7 +80,7 @@ namespace DelaunayVoronoi
                 (point3.X - point1.X) * (point2.Y - point1.Y);
             return result > 0;
         }
-
+        
         public bool SharesEdgeWith(in Triangle triangle)
         {
             int shaderVerticesCount = 0;
@@ -93,7 +95,8 @@ namespace DelaunayVoronoi
 
             return shaderVerticesCount == 2;
         }
-
+        
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool IsPointInsideCircumcircle(in Point point)
         {
             var d_squared = (point.X - Circumcenter.X) * (point.X - Circumcenter.X) +

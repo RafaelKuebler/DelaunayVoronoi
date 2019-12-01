@@ -13,10 +13,13 @@ namespace DelaunayVoronoi
 
         public MainWindow()
         {
+            var delaunayTimer = Stopwatch.StartNew();
+
             InitializeComponent();
             //С оптимизацией
 
             BuildVoronoiDiagram();
+            delaunayTimer.Stop();
         }
 
         public void BuildVoronoiDiagram()
@@ -100,8 +103,11 @@ namespace DelaunayVoronoi
 
         private void Rebuild__Click(object sender, RoutedEventArgs e)
         {
+            var delaunayTimer = Stopwatch.StartNew();
+
             Canvas.Children.Clear();
             BuildVoronoiDiagram();
+            delaunayTimer.Stop();
         }
     }
 }
