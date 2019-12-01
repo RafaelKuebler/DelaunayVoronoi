@@ -7,30 +7,25 @@ namespace DelaunayVoronoi
     {
         public Point[] Vertices { get; } = new Point[3];
         public Point Circumcenter { get; private set; }
-        private double _radiusSquared;
+        public double RadiusSquared;
 
-        public HashSet<Triangle> TrianglesWithSharedEdge {
-            get
-            {
+        public IEnumerable<Triangle> TrianglesWithSharedEdge {
+            get {
                 var neighbors = new HashSet<Triangle>();
                 foreach (var vertex in Vertices)
                 {
-                    foreach (var triangle in vertex.AdjacentTriangles)
+                    var trianglesWithSharedEdge = vertex.AdjacentTriangles.Where(o =>
                     {
-                        if (triangle != this && this.SharesEdgeWith(triangle))
-                        {
-                            neighbors.Add(triangle);
-                        }
-                    }
-
-                    neighbors.UnionWith(neighbors);
+                        return o != this && SharesEdgeWith(o);
+                    });
+                    neighbors.UnionWith(trianglesWithSharedEdge);
                 }
 
                 return neighbors;
             }
         }
 
-        public Triangle(in Point point1,in Point point2,in Point point3)
+        public Triangle(Point point1, Point point2, Point point3)
         {
             if (!IsCounterClockwise(point1, point2, point3))
             {
@@ -53,6 +48,8 @@ namespace DelaunayVoronoi
 
         private void UpdateCircumcircle()
         {
+            // https://codefound.wordpress.com/2013/02/21/how-to-compute-a-circumcircle/#more-58
+            // https://en.wikipedia.org/wiki/Circumscribed_circle
             var p0 = Vertices[0];
             var p1 = Vertices[1];
             var p2 = Vertices[2];
@@ -71,36 +68,27 @@ namespace DelaunayVoronoi
 
             var center = new Point(aux1 / div, aux2 / div);
             Circumcenter = center;
-            _radiusSquared = (center.X - p0.X) * (center.X - p0.X) + (center.Y - p0.Y) * (center.Y - p0.Y);
+            RadiusSquared = (center.X - p0.X) * (center.X - p0.X) + (center.Y - p0.Y) * (center.Y - p0.Y);
         }
 
-        private bool IsCounterClockwise(in Point point1, in Point point2, in Point point3)
+        private bool IsCounterClockwise(Point point1, Point point2, Point point3)
         {
             var result = (point2.X - point1.X) * (point3.Y - point1.Y) -
                 (point3.X - point1.X) * (point2.Y - point1.Y);
             return result > 0;
         }
 
-        public bool SharesEdgeWith(in Triangle triangle)
+        public bool SharesEdgeWith(Triangle triangle)
         {
-            int shaderVerticesCount = 0;
-
-            foreach (var vertex in Vertices)
-            {
-                if (triangle.Vertices.Contains(vertex))
-                {
-                    shaderVerticesCount++;
-                }
-            }
-
-            return shaderVerticesCount == 2;
+            var sharedVertices = Vertices.Where(o => triangle.Vertices.Contains(o)).Count();
+            return sharedVertices == 2;
         }
 
-        public bool IsPointInsideCircumcircle(in Point point)
+        public bool IsPointInsideCircumcircle(Point point)
         {
             var d_squared = (point.X - Circumcenter.X) * (point.X - Circumcenter.X) +
-                            (point.Y - Circumcenter.Y) * (point.Y - Circumcenter.Y);
-            return d_squared < _radiusSquared;
+                (point.Y - Circumcenter.Y) * (point.Y - Circumcenter.Y);
+            return d_squared < RadiusSquared;
         }
     }
 }

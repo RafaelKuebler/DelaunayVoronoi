@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using BenchmarkDotNet.Attributes;
 
 namespace DelaunayVoronoi
 {
@@ -11,7 +10,7 @@ namespace DelaunayVoronoi
         private double MaxY { get; set; }
         private IEnumerable<Triangle> border;
 
-        public List<Point> GeneratePoints(int amount, double maxX, double maxY)
+        public IEnumerable<Point> GeneratePoints(int amount, double maxX, double maxY)
         {
             MaxX = maxX;
             MaxY = maxY;
@@ -37,13 +36,14 @@ namespace DelaunayVoronoi
             return points;
         }
 
-        public HashSet<Triangle> BowyerWatson(in List<Point> points)
+        public IEnumerable<Triangle> BowyerWatson(IEnumerable<Point> points)
         {
+            //var supraTriangle = GenerateSupraTriangle();
             var triangulation = new HashSet<Triangle>(border);
 
             foreach (var point in points)
             {
-                var badTriangles = FindBadTriangles(in point, in triangulation);
+                var badTriangles = FindBadTriangles(point, triangulation);
                 var polygon = FindHoleBoundaries(badTriangles);
 
                 foreach (var triangle in badTriangles)
@@ -62,10 +62,11 @@ namespace DelaunayVoronoi
                 }
             }
 
+            //triangulation.RemoveWhere(o => o.Vertices.Any(v => supraTriangle.Vertices.Contains(v)));
             return triangulation;
         }
 
-        private List<Edge> FindHoleBoundaries(HashSet<Triangle> badTriangles)
+        private List<Edge> FindHoleBoundaries(ISet<Triangle> badTriangles)
         {
             var edges = new List<Edge>();
             foreach (var triangle in badTriangles)
@@ -74,6 +75,7 @@ namespace DelaunayVoronoi
                 edges.Add(new Edge(triangle.Vertices[1], triangle.Vertices[2]));
                 edges.Add(new Edge(triangle.Vertices[2], triangle.Vertices[0]));
             }
+            var grouped = edges.GroupBy(o => o);
             var boundaryEdges = edges.GroupBy(o => o).Where(o => o.Count() == 1).Select(o => o.First());
             return boundaryEdges.ToList();
         }
@@ -92,17 +94,10 @@ namespace DelaunayVoronoi
             return new Triangle(point1, point2, point3);
         }
 
-        private HashSet<Triangle> FindBadTriangles(in Point point, in HashSet<Triangle> triangles)
+        private ISet<Triangle> FindBadTriangles(Point point, HashSet<Triangle> triangles)
         {
-            HashSet<Triangle> bad = new HashSet<Triangle>();
-
-            foreach (var triangle in triangles)
-            {
-                if (triangle.IsPointInsideCircumcircle(in point))
-                    bad.Add(triangle);
-            }
-
-            return bad;
+            var badTriangles = triangles.Where(o => o.IsPointInsideCircumcircle(point));
+            return new HashSet<Triangle>(badTriangles);
         }
     }
 }

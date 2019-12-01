@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fb9bd15-ce01-4415-9e79-6826773f5a77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DelaunayVoronoi/DelaunayVoronoi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DelaunayVoronoi/DelaunayVoronoi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DelaunayVoronoi/Edge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DelaunayVoronoi/Edge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DelaunayVoronoi/Point.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DelaunayVoronoi/Point.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
+              <folding>
+                <marker date="1575212610707" expanded="false" signature="6:100" ph="..." />
+                <marker date="1575212610707" expanded="true" signature="127:3701" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="167:3699" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="384:1248" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1013:1210" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1318:2205" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1434:2160" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1649:1858" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1729:1840" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1979:2146" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2284:2816" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2387:2658" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2866:3305" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2889:2984" ph="/* 1  -&gt; maxX ... */" />
+                <marker date="1575212610707" expanded="true" signature="3405:3693" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="3525:3658" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+              <folding>
+                <marker date="1575212610707" expanded="true" signature="6:52" ph="..." />
+                <marker date="1575212610707" expanded="true" signature="79:3408" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="107:3406" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="324:908" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="341:898" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="461:849" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="550:778" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="651:756" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="982:1558" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1053:1195" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1212:1354" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="1601:2446" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2158:2232" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2538:2725" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2783:3099" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2880:3043" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="2950:3029" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="3162:3400" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+              <folding>
+                <marker date="1575212610707" expanded="true" signature="60:625" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="87:623" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="189:617" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="303:573" ph="{...}" />
+                <marker date="1575212610707" expanded="true" signature="392:559" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Point.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <marker date="1575212861953" expanded="true" signature="6:47" ph="..." />
+                <marker date="1575212861953" expanded="true" signature="74:350" ph="{...}" />
+                <marker date="1575212861953" expanded="true" signature="99:348" ph="{...}" />
+                <marker date="1575212861953" expanded="true" signature="284:342" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+              <folding>
+                <marker date="1575212610704" expanded="false" signature="6:144" ph="..." />
+                <marker date="1575212610704" expanded="true" signature="171:3132" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="218:3130" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="378:968" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="1028:1704" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="1080:1694" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="1781:2602" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="1885:2156" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="2197:2592" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="2668:3124" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="2725:3114" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1575199452810" expanded="true" signature="0:519" ph="&lt;&lt;Canvas Name=&quot;Canvas&quot; Margin=&quot;20,20,20,20&quot; /&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Edge.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="50" />
+              <folding>
+                <marker date="1575212610704" expanded="true" signature="6:47" ph="..." />
+                <marker date="1575212610704" expanded="true" signature="74:824" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="127:822" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="261:339" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="382:529" ph="{...}" />
+                <marker date="1575212610704" expanded="true" signature="569:816" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>contains</find>
+      <find>Contains</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DelaunayVoronoi/Point.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/658271AA-00D0-42A5-A887-5350393FEE96/3f/8347f6b9/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DelaunayVoronoi/Edge.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01B60F1D-E92C-48E6-8F1A-412F1E1120F2/12/381b4a1d/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/42/145f1d17/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Edge.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs" />
+        <option value="$PROJECT_DIR$/DelaunayVoronoi/Point.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.DelaunayVoronoi/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="1" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="DelaunayVoronoi" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="DelaunayVoronoi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="DelaunayVoronoi" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="DelaunayVoronoi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="DelaunayVoronoi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MainWindow.xaml" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/DelaunayVoronoi/bin/Debug/Delaunay.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DelaunayVoronoi/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/DelaunayVoronoi/DelaunayVoronoi.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fb9bd15-ce01-4415-9e79-6826773f5a77" name="Default Changelist" comment="" />
+      <created>1575201139427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575201139427</updated>
+      <workItem from="1575201144486" duration="11714000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11750000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-7" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32502708" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" weight="0.61213434" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="XAML Preview" order="15" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32827735" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" weight="0.32995737" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/42/145f1d17/Object.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/658271AA-00D0-42A5-A887-5350393FEE96/3f/8347f6b9/HashSet`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="231" column="16" selection-start-line="231" selection-start-column="16" selection-end-line="231" selection-end-column="16" />
+          <folding>
+            <marker date="1575203639563" expanded="true" signature="0:309" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1575203639563" expanded="false" signature="317:430" ph="..." />
+            <marker date="1575203639563" expanded="true" signature="468:52101" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="473:693" ph="///   Представляет набор значений. ... " />
+            <marker date="1575203639563" expanded="true" signature="1042:52099" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="1663:1866" ph="///   Инициализирует пустой экземпляр класса &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt;, который испол ... " />
+            <marker date="1575203639563" expanded="true" signature="1981:1993" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="1999:2413" ph="///  ... " />
+            <marker date="1575203639563" expanded="true" signature="2521:2533" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="2539:3097" ph="///   Инициализирует пустой экземпляр класса &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt;, который испол ... " />
+            <marker date="1575203639563" expanded="true" signature="3176:3427" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="3433:4070" ph="///   Инициализирует новый экземпляр класса &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt;, который исполь ... " />
+            <marker date="1575203639563" expanded="true" signature="4222:4234" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="4240:5231" ph="///   Инициализирует новый экземпляр класса &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt;, который исполь ... " />
+            <marker date="1575203639563" expanded="true" signature="5360:5941" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="5590:5637" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="5648:5935" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="5987:6914" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="6165:6399" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="6410:6880" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="6627:6837" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="6715:6827" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="6920:7599" ph="///   Инициализирует новый экземпляр класса &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; с сериализованн ... " />
+            <marker date="1575203639563" expanded="true" signature="7671:7711" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="7717:8515" ph="///  ... " />
+            <marker date="1575203639563" expanded="true" signature="8602:8778" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="8844:8890" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="8896:9025" ph="///   Удаляет все элементы из объекта &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt;. ... " />
+            <marker date="1575203639563" expanded="true" signature="9078:9383" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="9116:9353" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="9389:9915" ph="///   Определяет, содержит ли объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; указанный элемент. ... " />
+            <marker date="1575203639563" expanded="true" signature="9977:10399" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="10017:10373" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="10205:10365" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="10405:11465" ph="///   Копирует элементы объекта &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; в массив, начиная с указанн ... " />
+            <marker date="1575203639563" expanded="true" signature="11544:11608" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="11614:12172" ph="///   Удаляет указанный элемент из объекта &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt;. ... " />
+            <marker date="1575203639563" expanded="true" signature="12232:13358" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="12272:13332" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="12518:13324" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="12645:13287" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="13093:13193" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="13364:13504" ph="///Возвращает число элементов, содержащихся в наборе. ... " />
+            <marker date="1575203639563" expanded="true" signature="13554:13646" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="13595:13640" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="13711:13796" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="13752:13790" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="13802:14150" ph="///   Возвращает перечислитель, выполняющий итерацию элементов объекта &lt;see cref=&quot;T:System.Collections.Generic.Ha ... " />
+            <marker date="1575203639563" expanded="true" signature="14228:14286" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="14366:14441" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="14515:14587" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="14593:15508" ph="///   Реализует интерфейс &lt;see cref=&quot;T:System.Runtime.Serialization.ISerializable&quot; /&gt; и возвращает данные, необхо ... " />
+            <marker date="1575203639563" expanded="true" signature="15726:16268" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="16274:16810" ph="///   Реализует интерфейс &lt;see cref=&quot;T:System.Runtime.Serialization.ISerializable&quot; /&gt; и вызывает событие десериал ... " />
+            <marker date="1575203639563" expanded="true" signature="16867:17717" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="17140:17555" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="17723:18086" ph="///Добавляет указанный элемент в набор. ... " />
+            <marker date="1575203639563" expanded="true" signature="18143:18196" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="18202:18676" ph="///   Выполняет поиск указанного значения в наборе и возвращает равное ему значение, если его удалось найти. ... " />
+            <marker date="1575203639563" expanded="true" signature="18737:19024" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="18777:18965" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="18863:18957" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="19030:19592" ph="///   Изменяет текущий объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; так, чтобы он содержал все эл ... " />
+            <marker date="1575203639563" expanded="true" signature="19669:19829" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="19835:20369" ph="///   Изменяет текущий объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; так, чтобы он содержал только ... " />
+            <marker date="1575203639563" expanded="true" signature="20450:21040" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="20660:20991" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="20697:20759" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="20890:20983" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="21046:21523" ph="///   Удаляет все элементы в указанной коллекции из текущего объекта &lt;see cref=&quot;T:System.Collections.Generic.Hash ... " />
+            <marker date="1575203639563" expanded="true" signature="21601:21891" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="21759:21797" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="21808:21885" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="21897:22472" ph="///   Изменяет текущий объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; так, чтобы он содержал только ... " />
+            <marker date="1575203639563" expanded="true" signature="22559:23062" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="22737:22775" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="22786:23056" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="23068:23801" ph="///   Определяет, является ли объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; подмножеством указанно ... " />
+            <marker date="1575203639563" expanded="true" signature="23879:24502" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="24144:24282" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="24508:25265" ph="///   Определяет, является ли объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; строгим подмножеством  ... " />
+            <marker date="1575203639563" expanded="true" signature="25349:26093" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="25514:25874" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="25717:25866" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="26099:26836" ph="///   Определяет, является ли объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; супермножеством указан ... " />
+            <marker date="1575203639563" expanded="true" signature="26916:27379" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="27081:27327" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="27385:28138" ph="///   Определяет, является ли объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; строгим супермножество ... " />
+            <marker date="1575203639563" expanded="true" signature="28224:29005" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="28440:28787" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="28625:28779" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="29011:29789" ph="///   Определяет, имеются ли общие элементы в текущем объекте &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot;  ... " />
+            <marker date="1575203639563" expanded="true" signature="29865:30132" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="30035:30106" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="30138:30845" ph="///   Определяет, содержат ли объект &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; и указанная коллекция  ... " />
+            <marker date="1575203639563" expanded="true" signature="30922:31632" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="31131:31275" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="31638:32174" ph="///   Копирует элементы объекта &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; в массив. ... " />
+            <marker date="1575203639563" expanded="true" signature="32237:32292" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="32298:33788" ph="///   Копирует указанное количество элементов объекта &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; в мас ... " />
+            <marker date="1575203639563" expanded="true" signature="33878:34661" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="34492:34655" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="34547:34647" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="34667:35322" ph="///   Удаляет все элементы, удовлетворяющие условиям, которые были определены указанным предикатом из коллекции &lt; ... " />
+            <marker date="1575203639563" expanded="true" signature="35398:35783" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="35566:35759" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="35621:35751" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="35789:36149" ph="///   Возвращает объект &lt;see cref=&quot;T:System.Collections.Generic.IEqualityComparer`1&quot; /&gt;, используемый для определ ... " />
+            <marker date="1575203639563" expanded="true" signature="36219:36314" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="36260:36308" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="36320:36580" ph="///   Задает емкость объекта &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; равной фактическому числу элем ... " />
+            <marker date="1575203639563" expanded="true" signature="36638:37556" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="36673:36803" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="36814:37550" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="37075:37408" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="37135:37398" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="37562:38032" ph="///   Возвращает объект &lt;see cref=&quot;T:System.Collections.IEqualityComparer&quot; /&gt;, который можно использовать для про ... " />
+            <marker date="1575203639563" expanded="true" signature="38100:38191" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="38234:38384" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="38421:38644" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="38711:39510" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="38929:39165" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="39000:39157" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="39270:39439" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="39553:40994" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="39874:40045" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="40095:40198" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="40209:40449" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="40270:40378" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="40780:40969" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41055:41311" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41371:41506" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41408:41481" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41570:41705" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41606:41680" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41772:42039" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41839:42033" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="41894:42025" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="42137:42946" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="42309:42448" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="42566:42707" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="42779:42940" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="42987:43345" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="43169:43322" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="43414:43541" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="43451:43535" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="43645:44770" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="43845:44113" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="44124:44294" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="44325:44574" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="44646:44764" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="44832:45972" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="45072:45277" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="45196:45269" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="45327:45430" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="45441:45681" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="45502:45610" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="46130:47512" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="46165:46566" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="46269:46404" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="46307:46394" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="46699:46838" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="46996:47352" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="47087:47243" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="47145:47233" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="47256:47344" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="47540:47635" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="47759:48430" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="47924:48136" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48026:48107" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48164:48405" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48229:48354" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48276:48344" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48515:48586" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48631:48757" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48791:48868" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48894:48984" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="48990:49116" ph="///   Перечисляет элементы объекта &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt;. ... " />
+            <marker date="1575203639563" expanded="true" signature="49307:52095" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="49463:49601" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="49609:49767" ph="///   Освобождает все ресурсы, используемые &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1.Enumerator&quot; /&gt; объе ... " />
+            <marker date="1575203639563" expanded="true" signature="49826:49842" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="49850:50390" ph="///   Перемещает перечислитель к следующему элементу &lt;see cref=&quot;T:System.Collections.Generic.HashSet`1&quot; /&gt; коллек ... " />
+            <marker date="1575203639563" expanded="true" signature="50450:50998" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="50669:50885" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="50737:50875" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="51006:51294" ph="///   Возвращает элемент, расположенный в текущей позиции перечислителя. ... " />
+            <marker date="1575203639563" expanded="true" signature="51348:51452" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="51393:51444" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="51517:51803" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="51562:51795" ph="{...}" />
+            <marker date="1575203639563" expanded="true" signature="51866:52089" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01B60F1D-E92C-48E6-8F1A-412F1E1120F2/12/381b4a1d/XamlReader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="334" column="6" selection-start-line="334" selection-start-column="6" selection-end-line="334" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Voronoi.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding>
+            <marker date="1575212610707" expanded="true" signature="60:625" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="87:623" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="189:617" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="303:573" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="392:559" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Edge.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="50" />
+          <folding>
+            <marker date="1575212610704" expanded="true" signature="6:47" ph="..." />
+            <marker date="1575212610704" expanded="true" signature="74:824" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="127:822" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="261:339" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="382:529" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="569:816" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1575199452810" expanded="true" signature="0:519" ph="&lt;&lt;Canvas Name=&quot;Canvas&quot; Margin=&quot;20,20,20,20&quot; /&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Triangle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
+          <folding>
+            <marker date="1575212610707" expanded="true" signature="6:52" ph="..." />
+            <marker date="1575212610707" expanded="true" signature="79:3408" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="107:3406" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="324:908" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="341:898" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="461:849" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="550:778" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="651:756" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="982:1558" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1053:1195" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1212:1354" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1601:2446" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2158:2232" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2538:2725" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2783:3099" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2880:3043" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2950:3029" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="3162:3400" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Delaunay.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
+          <folding>
+            <marker date="1575212610707" expanded="false" signature="6:100" ph="..." />
+            <marker date="1575212610707" expanded="true" signature="127:3701" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="167:3699" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="384:1248" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1013:1210" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1318:2205" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1434:2160" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1649:1858" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1729:1840" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="1979:2146" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2284:2816" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2387:2658" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2866:3305" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="2889:2984" ph="/* 1  -&gt; maxX ... */" />
+            <marker date="1575212610707" expanded="true" signature="3405:3693" ph="{...}" />
+            <marker date="1575212610707" expanded="true" signature="3525:3658" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/MainWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <marker date="1575212610704" expanded="false" signature="6:144" ph="..." />
+            <marker date="1575212610704" expanded="true" signature="171:3132" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="218:3130" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="378:968" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="1028:1704" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="1080:1694" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="1781:2602" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="1885:2156" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="2197:2592" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="2668:3124" ph="{...}" />
+            <marker date="1575212610704" expanded="true" signature="2725:3114" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DelaunayVoronoi/Point.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <marker date="1575212861953" expanded="true" signature="6:47" ph="..." />
+            <marker date="1575212861953" expanded="true" signature="74:350" ph="{...}" />
+            <marker date="1575212861953" expanded="true" signature="99:348" ph="{...}" />
+            <marker date="1575212861953" expanded="true" signature="284:342" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

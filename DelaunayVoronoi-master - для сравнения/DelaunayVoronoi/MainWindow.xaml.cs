@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Shapes;
-using BenchmarkDotNet.Attributes;
 
 namespace DelaunayVoronoi
 {
@@ -14,12 +13,12 @@ namespace DelaunayVoronoi
         public MainWindow()
         {
             InitializeComponent();
-            //С оптимизацией
+            //Без оптимизации
 
             var points = delaunay.GeneratePoints(5000, 800, 400);
 
             var delaunayTimer = Stopwatch.StartNew();
-            var triangulation = delaunay.BowyerWatson(in points);
+            var triangulation = delaunay.BowyerWatson(points);
             delaunayTimer.Stop();
             DrawTriangulation(triangulation);
 

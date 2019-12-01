@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="B:\WorkProjects\DelaunayVoronoi" t="IncludeFlat">
+      <e p="DelaunayVoronoi" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Delaunay.cs" t="Include" />
+        <e p="DelaunayVoronoi.csproj" t="IncludeRecursive" />
+        <e p="Edge.cs" t="Include" />
+        <e p="MainWindow.xaml" t="Include" />
+        <e p="MainWindow.xaml.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Point.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Triangle.cs" t="Include" />
+        <e p="Voronoi.cs" t="Include" />
+      </e>
+      <e p="DelaunayVoronoi.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\uneex\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\uneex\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_DelaunayVoronoi.1664991553.00" t="ExcludeRecursive" />
+  </component>
+</project>
