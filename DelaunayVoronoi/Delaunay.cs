@@ -1,16 +1,19 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Documents;
 using BenchmarkDotNet.Attributes;
+using System.Threading.Tasks;
 
 namespace DelaunayVoronoi
 {
     public class DelaunayTriangulator
     {
-        private double MaxX { get; set; }
-        private double MaxY { get; set; }
+        private double MaxX;
+        private double MaxY;
+
         private IEnumerable<Triangle> border;
 
         public List<Point> GeneratePoints(int amount, double maxX, double maxY)
@@ -24,15 +27,15 @@ namespace DelaunayVoronoi
             var point2 = new Point(MaxX, MaxY);
             var point3 = new Point(MaxX, 0);
 
-            var points = new List<Point>(amount + 1) { point0, point1, point2, point3 };
-            
+            var points = new List<Point>(amount + 1) {point0, point1, point2, point3};
+
             var tri1 = new Triangle(point0, point1, point2);
             var tri2 = new Triangle(point0, point2, point3);
 
-            border = new List<Triangle>() { tri1, tri2 };
+            border = new List<Triangle>() {tri1, tri2};
 
             var random = new Random();
-            
+
             for (int i = 0; i < amount - 4; i++)
             {
                 var pointX = random.NextDouble() * MaxX;
@@ -47,15 +50,18 @@ namespace DelaunayVoronoi
         {
             var triangulation = new HashSet<Triangle>(border);
 
+            Stopwatch s = new Stopwatch();
+            s.Start();
+
             foreach (var point in points)
             {
-                var badTriangles = new HashSet<Triangle>();
+                var badTriangles = new List<Triangle>();
 
                 FindBadTriangles(in point, in triangulation, ref badTriangles);
 
                 if (badTriangles.Count > 0)
                 {
-                    var polygon = FindHoleBoundaries(in badTriangles);
+                    var polygon = FindHoleBoundaries(badTriangles);
                     foreach (var edge in polygon)
                     {
                         var triangle = new Triangle(point, edge.Point1, edge.Point2);
@@ -74,10 +80,12 @@ namespace DelaunayVoronoi
                 triangulation.ExceptWith(badTriangles);
             }
 
+            s.Stop();
+
             return triangulation;
         }
 
-        private List<Edge> FindHoleBoundaries(in HashSet<Triangle> badTriangles)
+        private List<Edge> FindHoleBoundaries(List<Triangle> badTriangles)
         {
             var edges = new List<Edge>(badTriangles.Count * 3);
 
@@ -106,8 +114,9 @@ namespace DelaunayVoronoi
             return new Triangle(point1, point2, point3);
         }
 
-        private void FindBadTriangles(in Point point, in HashSet<Triangle> triangles,
-                                      ref HashSet<Triangle> badTriangles)
+        private void FindBadTriangles(in  Point             point,
+                                      in  HashSet<Triangle> triangles,
+                                      ref List<Triangle>    badTriangles)
         {
             foreach (var triangle in triangles)
             {

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Windows;
 
 namespace DelaunayVoronoi
 {
@@ -10,6 +9,7 @@ namespace DelaunayVoronoi
     {
         public  Point[] Vertices = new Point[3];
         public  Point   Circumcenter;
+        private double  _radiusSquared;
         private double  _radius;
 
         public HashSet<Triangle> TrianglesWithSharedEdge
@@ -74,8 +74,8 @@ namespace DelaunayVoronoi
             }
 
             var center = new Point(aux1 / div, aux2 / div);
-            Circumcenter = center;
-            _radius      = (center.X - p0.X) + (center.Y - p0.Y);
+            Circumcenter   = center;
+            _radiusSquared = (center.X - p0.X) * (center.X - p0.X) + (center.Y - p0.Y) * (center.Y - p0.Y);
         }
 
         private bool IsCounterClockwise(in Point point1, in Point point2, in Point point3)
@@ -106,20 +106,7 @@ namespace DelaunayVoronoi
             var d_squared = (point.X - Circumcenter.X) * (point.X - Circumcenter.X) +
                             (point.Y - Circumcenter.Y) * (point.Y - Circumcenter.Y);
 
-//                var dx = Math.Abs(point.X - Circumcenter.X);
-//                var dy = Math.Abs(point.Y - Circumcenter.Y);
-//
-//                if (dx > _radius)
-//                    return false;
-//                if (dy > _radius)
-//                    return false;
-//
-//                if ((dx * dx + dy * dy) < _radius * _radius)
-//                {
-//                    return true;
-//                }
-
-                return d_squared < _radius * _radius;
+            return d_squared < _radiusSquared;
         }
     }
 }
