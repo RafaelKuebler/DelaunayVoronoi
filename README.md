@@ -8,3 +8,5 @@
 * Возможность через интерфейс задать кол-во точек для построения
 
 <img alt="Delaunay triangulation and Voronoi diagram for 5000 points" src="screenshots/delaunay_voronoi.png" width="700">
+<img alt="Delaunay triangulation and Voronoi diagram for 5000 points" src="screenshots/Guassian.png" width="700">
+<img alt="Delaunay triangulation and Voronoi diagram for 5000 points" src="screenshots/Circle.png" width="700">
