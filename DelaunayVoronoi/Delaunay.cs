@@ -55,7 +55,7 @@ namespace DelaunayVoronoi
                 }
                 triangulation.RemoveWhere(o => badTriangles.Contains(o));
 
-                foreach (var edge in polygon)
+                foreach (var edge in polygon.Where(possibleEdge => possibleEdge.Point1 != point && possibleEdge.Point2 != point))
                 {
                     var triangle = new Triangle(point, edge.Point1, edge.Point2);
                     triangulation.Add(triangle);

@@ -5,6 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DelaunayVoronoi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="480" Width="850">
-    <Canvas Name="Canvas" Margin="20,20,20,20" />
+        Title="Voronoi Diagram Generator" Height="480" Width="850">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Bottom" Margin="10">
+            <Grid DockPanel.Dock="Right">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button Content="Draw" Command="{Binding Path=DrawCommand}" DockPanel.Dock="Right" Padding="10,0,10,0" />
+            </Grid>
+            <Grid DockPanel.Dock="Left" Margin="0,0,10,0">
+                <Grid.Resources>
+                    <Thickness x:Key="TextBoxMargin" Left="0" Top="2" Bottom="2" />
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Points" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" />
+                <TextBox Text="{Binding PointCount}" Grid.Row="0" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
+
+                <TextBlock Text="Width" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" />
+                <TextBox Text="{Binding ElementName=Canvas, Path=ActualWidth, Mode=OneWay}" IsReadOnly="True" Grid.Row="1" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
+
+                <TextBlock Text="Height" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" />
+                <TextBox Text="{Binding ElementName=Canvas, Path=ActualHeight, Mode=OneWay}" IsReadOnly="True" Grid.Row="2" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
+            </Grid>
+            <Grid />
+        </DockPanel>
+        <Canvas Name="Canvas" Margin="20,20,20,20" />
+    </DockPanel>
 </Window>

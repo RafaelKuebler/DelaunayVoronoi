@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DelaunayVoronoi
@@ -27,6 +28,13 @@ namespace DelaunayVoronoi
 
         public Triangle(Point point1, Point point2, Point point3)
         {
+            // In theory this shouldn't happen, but it was at one point so this at least makes sure we're getting a
+            // relatively easily-recognised error message, and provides a handy breakpoint for debugging.
+            if (point1 == point2 || point1 == point3 || point2 == point3)
+            {
+                throw new ArgumentException("Must be 3 distinct points");
+            }
+
             if (!IsCounterClockwise(point1, point2, point3))
             {
                 Vertices[0] = point1;
@@ -63,7 +71,7 @@ namespace DelaunayVoronoi
 
             if (div == 0)
             {
-                throw new System.Exception();
+                throw new DivideByZeroException();
             }
 
             var center = new Point(aux1 / div, aux2 / div);

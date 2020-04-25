@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Shapes;
 
 namespace DelaunayVoronoi
@@ -9,12 +11,24 @@ namespace DelaunayVoronoi
     {
         private DelaunayTriangulator delaunay = new DelaunayTriangulator();
         private Voronoi voronoi = new Voronoi();
+        public int PointCount { get; set; } = 2000;
+
+        public ICommand DrawCommand { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
 
-            var points = delaunay.GeneratePoints(5000, 800, 400);
+            DataContext = this;
+
+            DrawCommand = new Command(param => GenerateAndDraw());
+        }
+
+        private void GenerateAndDraw()
+        {
+            Canvas.Children.Clear();
+            Canvas.ClipToBounds = true;
+            var points = delaunay.GeneratePoints(PointCount, Canvas.ActualWidth, Canvas.ActualHeight);
 
             var delaunayTimer = Stopwatch.StartNew();
             var triangulation = delaunay.BowyerWatson(points);
@@ -87,6 +101,35 @@ namespace DelaunayVoronoi
 
                 Canvas.Children.Add(line);
             }
+        }
+    }
+
+    public class Command : ICommand
+    {
+        private readonly Action<object> _execute;
+        private readonly Func<object, bool> _canExecute;
+
+        public Command(Action<object> execute)
+            : this(execute, param => true)
+        {
+        }
+
+        public Command(Action<object> execute, Func<object, bool> canExecute)
+        {
+            _execute = execute;
+            _canExecute = canExecute;
+        }
+
+        public void Execute(object parameter)
+        {
+            _execute(parameter);
+        }
+
+        public event EventHandler CanExecuteChanged;
+
+        public bool CanExecute(object parameter)
+        {
+            return (_canExecute == null) || _canExecute(parameter);
         }
     }
 }
