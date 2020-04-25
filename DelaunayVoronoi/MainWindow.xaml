@@ -33,10 +33,10 @@
                 <TextBox Text="{Binding PointCount}" Grid.Row="0" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
 
                 <TextBlock Text="Width" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" />
-                <TextBox Text="{Binding ElementName=Canvas, Path=ActualWidth, Mode=OneWay}" IsReadOnly="True" Grid.Row="1" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
+                <TextBox Text="{Binding Path=DiagramWidth, Mode=OneWay}" IsReadOnly="True" Grid.Row="1" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
 
                 <TextBlock Text="Height" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" />
-                <TextBox Text="{Binding ElementName=Canvas, Path=ActualHeight, Mode=OneWay}" IsReadOnly="True" Grid.Row="2" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
+                <TextBox Text="{Binding Path=DiagramHeight, Mode=OneWay}" IsReadOnly="True" Grid.Row="2" Grid.Column="2" Width="100" Margin="{StaticResource TextBoxMargin}" />
             </Grid>
             <Grid />
         </DockPanel>
