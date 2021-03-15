@@ -52,8 +52,8 @@ namespace DelaunayVoronoi
                     {
                         vertex.AdjacentTriangles.Remove(triangle);
                     }
+                    triangulation.Remove(triangle);
                 }
-                triangulation.RemoveWhere(o => badTriangles.Contains(o));
 
                 foreach (var edge in polygon.Where(possibleEdge => possibleEdge.Point1 != point && possibleEdge.Point2 != point))
                 {
